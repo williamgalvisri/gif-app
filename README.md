@@ -16,3 +16,13 @@ To get started, install the repository package via npm:
 
 ```bash
 npm install
+```
+
+
+## Installation
+
+To start server
+
+```bash
+npm start or ng serve
+```
