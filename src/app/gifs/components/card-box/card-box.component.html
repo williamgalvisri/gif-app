@@ -1,0 +1,12 @@
+<ng-template #noItems> <h3 class="text-center">Empiza a buscar Gif por ejemplo Goku bailando</h3></ng-template>
+<div class="section-gifs" *ngIf="list$ | async as items; else noItems">
+    <div *ngFor="let gif of list$ | async" class="card mb-2 text-center bg-dark wrapper-card">
+        <img id="gif" [src]="gif.images.downsized_medium.url" [alt]="gif.alt_text"/>
+
+        <div class="card-body text-white">
+            <div class="card-text">
+                {{gif.title}}
+            </div>
+        </div>
+    </div>
+</div>

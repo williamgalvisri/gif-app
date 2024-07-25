@@ -1,0 +1,46 @@
+.section-gifs {
+    display: grid;
+    max-width: 100%;
+    min-width: 450px;
+}
+
+#gif,
+wrapper-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .section-gifs {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+    #gif,
+    .wrapper-card {
+        max-width: 300;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-gifs {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    #gif,
+    .wrapper-card {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .section-gifs {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    #gif,
+    .wrapper-card {
+        max-width: 350px;
+    }
+}
